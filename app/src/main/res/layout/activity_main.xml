@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/chocolate_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/choco_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onCheckedButtonClicked"
+        tools:text="Chocolate" />
+
+    <CheckBox
+        android:id="@+id/sprinkles_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sprinkles_check"
+        app:layout_constraintEnd_toEndOf="@+id/chocolate_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/chocolate_box"
+        android:onClick="onCheckedButtonClicked"
+        app:layout_constraintTop_toBottomOf="@+id/chocolate_box" />
+
+    <CheckBox
+        android:id="@+id/nut_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/nut_check"
+        app:layout_constraintEnd_toEndOf="@+id/sprinkles_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sprinkles_box"
+        android:onClick="onCheckedButtonClicked"
+        app:layout_constraintTop_toBottomOf="@+id/sprinkles_box" />
+
+    <CheckBox
+        android:id="@+id/cherry_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cherry_check"
+        app:layout_constraintEnd_toEndOf="@+id/nut_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nut_box"
+        android:onClick="onCheckedButtonClicked"
+        app:layout_constraintTop_toBottomOf="@+id/nut_box" />
+
+    <CheckBox
+        android:id="@+id/oreo_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oreo_check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cherry_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cherry_box"
+        app:layout_constraintTop_toBottomOf="@+id/cherry_box"
+        android:onClick="onCheckedButtonClicked"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onToastButtonClicked"
+        android:text="@string/Toast_text"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/oreo_box"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="@+id/oreo_box"
+
+        app:layout_constraintTop_toBottomOf="@+id/oreo_box"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/topping_txt"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

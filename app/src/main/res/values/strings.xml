@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">homework prac 4</string>
+    <string name="topping_txt">Topping</string>
+    <string name="choco_box">Chocolate</string>
+    <string name="sprinkles_check">Spinkles</string>
+    <string name="nut_box">Nut</string>
+    <string name="cherry_check">Cherry</string>
+    <string name="nut_check">Nut</string>
+    <string name="oreo_check">oreo</string>
+    <string name="Toast_text">showToast</string>
+</resources>
